@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="l_krKVEXnUGz0lS5zrJJBg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.com" DesignTimeRectangle="1187, 282, 22, 22" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='    ' aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;sticky-header&amp;gt;header&amp;gt;div&amp;gt;details-modal&amp;gt;details&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;button&amp;gt;svg' parentid='shopify-section-header' tag='svg' /&gt;" Guid="0f43818b-ce3c-4e6a-950c-1ff54ccd39e0" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica® Skin Care | Official Site' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a5fd8389d986c917dbb2d4ec89989d5a.jpg" xmlns="">0IVkmGI1iekijgQZ1WJomsw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

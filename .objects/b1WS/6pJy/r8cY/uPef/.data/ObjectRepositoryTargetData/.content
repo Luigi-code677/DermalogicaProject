@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_Yg8vjHpsEKF3h2aw2aVuA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="550, 420, 74, 22" ElementVisibilityArgument="Interactive" Guid="d4a56fff-7349-4448-bef3-308066688162" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='RPA_InternetPriceMonitoring_Report.xlsx - Excel' /&gt;" SearchSteps="SemanticSelector" SemanticSelectorArgument="[string.Format(&quot;Data entry cell for the column {0} in the Dermalogica pricing table, in the same row with {1}&quot;, in_Website, in_SKU)]" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="af3f8587bbbb20ebefa1d9d1c91d1ed0.jpg" xmlns="">0NBMudFDuH0ez0ORlEFa7Qw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

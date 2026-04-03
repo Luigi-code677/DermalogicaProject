@@ -1,0 +1,13 @@
+﻿{
+  "Name": "RPA_InternetPriceMonitoring_Report.xlsx - Exc",
+  "Type": "Screen",
+  "Id": "r8cY39rXdUCbbQYa5Tj85g",
+  "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/r8cY39rXdUCbbQYa5Tj85g",
+  "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/6pJyn3YBTECFkjQio1SK_w",
+  "Created": "2026-04-01T20:47:05.6717333Z",
+  "Updated": "2026-04-01T20:47:05.6717333Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

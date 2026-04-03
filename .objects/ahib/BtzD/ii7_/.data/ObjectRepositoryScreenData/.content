@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="DbL4PNIqvEWIFJTDLM10rg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/ii7_Eyd8-kWNryTeYU-LTQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1040" BrowserType="Edge" ContentHash="ArOl4nxBo0qx4t5XABNOyw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKgSURBVFhHxVdBaxNBFN5e9f94rEcv+gOysZ7MzlrU3QkbSRBtjRU01ait0ZKmaowoFlEUq6gH/0DAg1RboiClFKv1oB6StEmevA3G3Tcz2W0CyYPvsG+/+ebbnZk3M9oB+6A2TAiJQUNIBGFszNmrM2s0asZjUYMnXZjxGObwHeUHQUjIoGnaSITxQzrjSzrjtSjjIAO+Qw5ysQ3VkUFIUOgm3xc17DLtLBCGXca2VI9CSHgRMayEzviOIB4S2FZntkN1QxnQmT1NBXsFalH9rgbwy6lIv1D9CSGB49bLbz9qpyB7c8GHqSs5jwG+I5sT/gdNG+lpwjEOqfPTQOPr2rqfZ9hlujp8BnD5UOGwCGWAccA+lAZwDdMGFKl0BnKFEizcX4QbhRIk05ldGcA+pAbaFU5dZHBMN75t0j7cWFvfgHzxIU2rDNQMY3KPYCASO7Gfkv+htPiUagvRbDZpSmqgbcIaFQy4tV1CTkxchEZDFMfAThuNBk13QmUgalox0QBuKpTIOCy9eUd1oVqrwUy+CEfGHThsxuFcZgY2f2xRmtqAwZOhDaxUvlBdePz8lcCbzRcpbZcGTEs6BChC4+qt2wLv9NRlSlMbkA2BahJ+XK1QXXjy4rXAm7v7gNKUBqSTULUMn718S3WhXq9DofQIjp+agGPOGbg2dwd+/f5DaVIDymWIkBWik6k01Le3qXaoUBiQFyJ3GBSleHb+nnSde6NardGU1EDXUtxtM5q8dB0+rX6GVqvl6wSfl1cq7iT8vvXTh/cflv06QZsRImg7xjG/kM21t9tsDsYTZwWODKG2444JZjtUoF+EPpB4TAzvSOYx4XQbjiD0dSjtmBjmsbxDGubFhOL/1czyXM0s92rmrXBhISQGDSExaPwFUzLF9hOX1Z0AAAAASUVORK5CYII=" Reference="r3jqcW5wj0SvHD4YMQ6Cww/ii7_Eyd8-kWNryTeYU-LTQ" Selector="&lt;html app='msedge.exe' title='Dermalogica® Skin Care | Official Site' /&gt;" Url="https://www.dermalogica.com/" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="a9e1ea5ea8e077a405810b7b560a0572.jpg" xmlns="">0MLqmh7fR8UmErZQumpjEoQ</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "active moist moisturizer(1)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "dF2nXzAg8kqdrIe0cvloLA",
+  "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/dF2nXzAg8kqdrIe0cvloLA",
+  "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/ii7_Eyd8-kWNryTeYU-LTQ",
+  "Created": "2026-04-01T21:41:26.2716485Z",
+  "Updated": "2026-04-01T21:41:26.2716485Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

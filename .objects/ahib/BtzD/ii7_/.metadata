@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Dermalogica® Skin Care  Official Site",
+  "Type": "Screen",
+  "Id": "ii7_Eyd8-kWNryTeYU-LTQ",
+  "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/ii7_Eyd8-kWNryTeYU-LTQ",
+  "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/BtzD6MN3QE2m8vyHwQRGlg",
+  "Created": "2026-04-01T20:56:06.385363Z",
+  "Updated": "2026-04-01T20:56:06.385363Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

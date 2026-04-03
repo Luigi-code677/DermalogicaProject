@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UcXyJM_MH0aSmban6r09CA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="623, 397, 137, 21" ElementVisibilityArgument="Interactive" Guid="947c8894-b93c-40f0-be24-6b073e20125c" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='RPA_InternetPriceMonitoring_Report.xlsx - Excel' /&gt;" SearchSteps="SemanticSelector" SemanticSelectorArgument="Data entry cell in the pricing report, located under the 'Dermalogica UK.com' column" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="66, 420, 74, 22" FuzzySelectorArgument="&lt;uia automationid='Grid' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' cls='XLSpreadsheetGrid' name='Cuadrícula' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;uia automationid='B6' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' cls='XLSpreadsheetCell' name='B6' matching:name='fuzzy' fuzzylevel:name='0.0' role='elemento' check:text='111059' /&gt;" Guid="5116b021-eff6-4260-bd60-519b6120f0e2" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="931f47e5f747cbde1ba7d5257fb999a3.jpg" xmlns="">0L5Pi754hlE2IrozHn85vZQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

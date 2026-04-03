@@ -1,0 +1,12 @@
+﻿{
+  "Name": "RPA_InternetPriceMonitoring_Report.xlsx - Excel",
+  "Type": "App",
+  "Id": "b1WSZjKy9kOrpGGDHzI8NA",
+  "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/b1WSZjKy9kOrpGGDHzI8NA",
+  "Created": "2026-04-01T20:47:05.4581211Z",
+  "Updated": "2026-04-01T20:47:05.4581211Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

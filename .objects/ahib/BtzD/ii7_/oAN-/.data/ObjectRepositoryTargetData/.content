@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_ocpJs_tqEWLvydt2cYlhw" Reference="r3jqcW5wj0SvHD4YMQ6Cww/oAN-q6QBh0eUX_6zmTc1Gg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.com/products/active-moist" DesignTimeRectangle="1192, 830, 115, 43" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="e393aaf5-cff9-49ce-b2be-a13d5a42e56a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist Lightweight Face Moisturizer for Oily Skin | Dermalogica®' /&gt;" SearchSteps="SemanticSelector" SemanticSelectorArgument="[string.Format(&quot;Text indicating the {0} oz size option for the product&quot;, in_Size)]" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="de7d204c8772b9f2ad2b6b012004a3d1.jpg" xmlns="">0O4y69P85VUG8HGE0oGiVfg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

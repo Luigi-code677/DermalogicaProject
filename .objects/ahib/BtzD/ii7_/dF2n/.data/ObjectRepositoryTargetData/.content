@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2XeLnafQUE2LfeljazOHsQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.com/pages/search-results-page" DesignTimeRectangle="374, 521, 254, 24" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="cc8e906d-c6b0-4e45-8d07-f85eabcd9b35" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist - Dermalogica' /&gt;" SearchSteps="SemanticSelector" SemanticSelectorArgument="[string.Format(&quot;The name of the product, {0}&quot;, itemName)]" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="39cf971e6e8d5846327dedda02772fe6.jpg" xmlns="">0o40rdYCMjEmnaa3eSs2G7A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

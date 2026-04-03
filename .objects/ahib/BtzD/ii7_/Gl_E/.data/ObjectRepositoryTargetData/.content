@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9K7I7b1iM0iKpDOHt0ULoQ" Reference="r3jqcW5wj0SvHD4YMQ6Cww/Gl_EE3kND0SLBzAir8QZQQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.com/pages/search-results-page" DesignTimeRectangle="13, 161, 0, 0" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='SPAN' aaname='{0}' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' idx='6' /&gt;&quot;, itemName)]" Guid="136ee19e-d822-41dd-8ae2-959942921c97" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist - Dermalogica' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="fb04023f51b30be3f974fd6ea8da61af.jpg" xmlns="">0-ZzGZcQX2Uae8SxRLD2Mng</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="" Name="itemName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
