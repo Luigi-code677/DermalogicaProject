@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZzJvdyMBLECtMXb_iTJmTA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.com" DesignTimeRectangle="843, 391, 173, 174" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='IMG' type='' /&gt;" Guid="7fa2ea43-a254-4e37-a7e3-ac7c1b3d0407" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica® Skin Care | Official Site' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="837, 351, 616, 26" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl id='snize-products-label' tag='LI' type='' class='snize-label' aaname='Products' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='PRODUCTS' /&gt;" Guid="b72350ee-9ccd-4adc-a537-ec2dbdf972a8" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d2dcc42c729edecc5d59fa4505e7967c.jpg" xmlns="">00S8IQegPwE2BkFW-3P0YWw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

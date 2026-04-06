@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nf_SCZLiKUuo_b5b_GqD6Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.co.uk/products/active-moist" DesignTimeRectangle="1164, 390, 73, 28" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='price' tag='SPAN' /&gt;" Guid="cec5f266-e394-423c-977f-49bafecb1fdd" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist, Oil-Free Moisturiser | Dermalogica® – Dermalogica UK' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="413e053a884ce998e58a5e13c83d1a2f.jpg" xmlns="">0mWHX6509HUaPUFFqATwpHQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

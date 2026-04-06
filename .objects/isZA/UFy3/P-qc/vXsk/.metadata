@@ -1,0 +1,14 @@
+﻿{
+  "Name": "active moist hydratant …",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "vXskq5_hhkm3UqzNdqsYhA",
+  "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/vXskq5_hhkm3UqzNdqsYhA",
+  "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/P-qcenvHdEq9bHKTicFYRg",
+  "Created": "2026-04-04T15:35:47.3351723Z",
+  "Updated": "2026-04-04T15:35:47.3351723Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

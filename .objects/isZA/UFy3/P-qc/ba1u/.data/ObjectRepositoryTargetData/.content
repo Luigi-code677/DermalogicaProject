@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uV497T8xMUWilOmjcMLB8Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.fr/products/lotion-hydratante-active-active-moist" DesignTimeRectangle="1096, 451, 85, 28" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='price-item price-item--regular' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="3b126622-658e-454e-8284-78067bf89376" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lotion Hydratante Active - Active Moist - Dermalogica' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d03a75a04cd684c93a1c1cb18fc6ad3d.jpg" xmlns="">0Y_BjFBes00O2B5maPpYRuA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

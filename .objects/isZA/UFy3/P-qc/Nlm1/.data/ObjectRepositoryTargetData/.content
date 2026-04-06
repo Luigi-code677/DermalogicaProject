@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="atH5mLGrMkKT2ZOqxFzz0Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.it" DesignTimeRectangle="680, 362, 60, 60" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='predictive-search-option-1' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='IMG' type='' class='predictive-search__image' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="ae671679-046f-491b-8b46-672c8d14c6fb" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica | Negozio ufficiale | cura della pelle di livello professionale – Dermalogica' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="680, 308, 525, 42" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='predictive-search-products' tag='H2' type='' class='predictive-search__heading text-body caption-with-letter-spacing' aaname='         Prodotti                 ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='PRODOTTI' /&gt;" Guid="cacfa34a-5656-45c3-9659-45ff87c8533c" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4bd6ccddf429c721da4e14d47d499fc7.jpg" xmlns="">0iWyFw_Y3JUuyT6uT1WZIqw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

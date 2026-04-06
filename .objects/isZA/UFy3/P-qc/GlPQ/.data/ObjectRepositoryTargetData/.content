@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fdeRGC3Ru0qTrt9bhvOAig" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.co.uk" DesignTimeRectangle="1670, 213, 52, 53" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Open search' idx='2' tag='BUTTON' /&gt;" Guid="e23f5fc0-7695-4c69-82bf-9b19f7993b28" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica Skin Care | Official – Dermalogica UK' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b6a3ed0bc93963de73d86e51dcaff65b.jpg" xmlns="">0y5ZXpwHlNUSj4Xf-KcDQ-w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

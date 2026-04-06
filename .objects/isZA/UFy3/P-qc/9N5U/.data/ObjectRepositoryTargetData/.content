@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yAchjYNmbUWGeScctaZWXQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.it/products/active-moist" DesignTimeRectangle="1110, 565, 76, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='price-item price-item--regular' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="380bd6b0-42d1-4c92-966c-f61624f4d427" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist | crema idratante | Negozio ufficiale Dermalogica – Dermalogica' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3e91bb12dbc0d4d7eebbe504a5e19cf3.jpg" xmlns="">01hFEzk6CM0qWYGSfBK5X1w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

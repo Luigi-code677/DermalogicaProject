@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="3wGq0y-6xEKcglb8_Vl5aQ" Reference="r3jqcW5wj0SvHD4YMQ6Cww/P-qcenvHdEq9bHKTicFYRg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1040" BrowserType="Edge" ContentHash="A-wYhoG0kU-NmBOOrOWQRA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAASdJREFUWEftl9sNwjAQBK8ESqAUOoEOoAMogY4ohRIoAbQoJ1m2JyHJ8gUjWYq89q3j+HGJ+NOyi4hbRDwi4mksirmvzWrOnY7uIo8uh6LRJSI2dYOBbDMHxToVfTXLDZoiiWo4xpIBJHox9ZVXQwamN0/WDECx1Vfrq+HTwLk4t7XwIeiDQkVO49rSgEKHq2GbNqBgBn1QMIM+KJhBHxTMoA8KZtAHBTPoQ4JuMG25e3Wbza1PyAcFBUqtPELn1ifkg0J54Cj40vqEfFDQNa1ACqznpfUJ+bBgBn1QMIM+KJhBHxTMoA8KZtAnt89USraGTMm6A8ikVBnPtzgOHt2kVKlyjk6ZsXMmFKv85+gd0W9c+d5YmZxhnV75OVxF60sxuz8kv80LzI8Nz/1reB8AAAAASUVORK5CYII=" Reference="r3jqcW5wj0SvHD4YMQ6Cww/P-qcenvHdEq9bHKTicFYRg" Selector="&lt;html app='msedge.exe' /&gt;" Url="[in_WebPage]" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="5d708dcbdbbf6144d4d45ac3e9ee1b54.jpg" xmlns="">06crjmuhJ20uDrkuKFGS2lg</imageRef>
+    </TargetApp>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="in_WebPage" />
+    </scg:List>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

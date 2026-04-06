@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="z1_OLUpk0k6e53ZVd8GjrA" Reference="r3jqcW5wj0SvHD4YMQ6Cww/w-NeuGgUc0yc2QGjK78GkQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.co.uk/search" DesignTimeRectangle="100, 607, 330, 330" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='product-media__image' tag='IMG' /&gt;" Guid="bf61e0d8-d5a0-4b8c-8516-c018d27be031" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Search: 105 results found for &amp;quot;active moist&amp;quot; – Dermalogica UK' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="182cc92443d89849d488db1100dfc690.jpg" xmlns="">04m7TKn77EUuSYL1t2t689w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

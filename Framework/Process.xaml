@@ -97,7 +97,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="883.0434782608695,1235.4782608695652" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="883.0434782608695,1409.1130434782608" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="websiteDictionary" />
       <Variable x:TypeArguments="x:String" Name="price" />
@@ -123,23 +123,26 @@
       </Assign.Value>
     </Assign>
     <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="452.45217391304345,87.65217391304347" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
-    <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each website" sap:VirtualizedContainerService.HintSize="452.45217391304345,704.5565217391304" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[websiteDictionary]">
+    <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each website" sap:VirtualizedContainerService.HintSize="452.45217391304345,878.1913043478261" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[websiteDictionary]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="website" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.94782608695647,582.6782608695652" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.94782608695647,756.3130434782609" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="415.72173913043474,173.63478260869564" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[website.Value]" />
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="GetPriceFromWeb - Invoke Workflow File (Dermalogica_Websites\GetPriceFromWeb.xaml)" sap:VirtualizedContainerService.HintSize="415.72173913043474,178.64347826086956" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Dermalogica_Websites\GetPriceFromWeb.xaml">
               <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_Variant">[website.Key]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_SizeMl">[in_TransactionItem("ml").ToString]</InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_WebPage">[website.Value]</InArgument>
                 <OutArgument x:TypeArguments="x:String" x:Key="out_Price">[price]</OutArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_Size">[in_TransactionItem("Oz").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_SizeOz">[in_TransactionItem("Oz").ToString]</InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_ProductName">[in_TransactionItem("Item").ToString]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>

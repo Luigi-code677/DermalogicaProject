@@ -1,0 +1,14 @@
+﻿{
+  "Name": "55.00€",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "ba1uqMNozkOO3YUZjo60dA",
+  "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/ba1uqMNozkOO3YUZjo60dA",
+  "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/P-qcenvHdEq9bHKTicFYRg",
+  "Created": "2026-04-04T15:37:51.7261302Z",
+  "Updated": "2026-04-04T15:37:51.7261302Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

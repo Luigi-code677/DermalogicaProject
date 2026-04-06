@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="IXlZ2303_Em8AJec99RDGw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.fr" DesignTimeRectangle="653, 400, 60, 60" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='IMG' type='' class='predictive-search__image' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="88922df5-2ea3-40b5-8520-cd0e530e466a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Découvrez Dermalogica : le meilleur des soins visage' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="653, 336, 631, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='predictive-search-products' tag='H2' type='' class='predictive-search__heading text-body caption-with-letter-spacing' aaname='         Produits                 ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='PRODUITS' /&gt;" Guid="dee3700c-8afe-4797-85a2-d02dadd82c5a" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="488422ee61e36774a940b1ceb8bfa343.jpg" xmlns="">0JkM__ctIMEuPsj4hi-Em7g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

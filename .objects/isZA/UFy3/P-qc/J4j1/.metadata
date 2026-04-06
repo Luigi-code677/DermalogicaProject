@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Cerca",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "J4j1F8dza0yoVYvKfu19og",
+  "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/J4j1F8dza0yoVYvKfu19og",
+  "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/P-qcenvHdEq9bHKTicFYRg",
+  "Created": "2026-04-04T15:19:22.0343814Z",
+  "Updated": "2026-04-04T15:19:22.0343814Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

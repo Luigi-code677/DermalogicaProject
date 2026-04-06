@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT cmdk-input",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "r0Z9kJ0UXUG7T1uD6giuIw",
+  "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/r0Z9kJ0UXUG7T1uD6giuIw",
+  "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/P-qcenvHdEq9bHKTicFYRg",
+  "Created": "2026-04-04T14:40:23.549037Z",
+  "Updated": "2026-04-04T14:40:23.549037Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

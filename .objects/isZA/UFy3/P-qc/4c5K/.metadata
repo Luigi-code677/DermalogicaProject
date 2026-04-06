@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click size",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "4c5K21dnr0CBE17va95jiQ",
+  "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/4c5K21dnr0CBE17va95jiQ",
+  "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/P-qcenvHdEq9bHKTicFYRg",
+  "Created": "2026-04-04T15:23:56.138096Z",
+  "Updated": "2026-04-04T15:23:56.138096Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
