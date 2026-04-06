@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1kNerjCib0GjA8i5I_2t3g" Reference="r3jqcW5wj0SvHD4YMQ6Cww/QLT6bg4uPEaEdb0OgwOwFA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.fr/products/lotion-hydratante-active-active-moist" DesignTimeRectangle="1096, 712, 115, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' tag='LABEL' innertext='{0}           ' matching:innertext='fuzzy' fuzzylevel:innertext='0.0' visibleinnertext='{0}' matching:visibleinnertext='fuzzy' fuzzylevel:visibleinnertext='0.0' idx='3' parentid='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' for='' matching:for='fuzzy' fuzzylevel:for='0.0' /&gt;&quot;, size)]" Guid="e6711977-a50a-4452-81e3-71a3e381de3b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lotion Hydratante Active - Active Moist - Dermalogica' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="8a392679e1fdf17b4155212841fc29a4.jpg" xmlns="">0F2SCAXgzB0yKbgzmcFKcXw</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="" Name="size" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

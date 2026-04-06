@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rsI1zBd5VUazO_iHAzh8Yg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/ype-xAtix0q6mM9aO8RsrQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.it/products/active-moist" DesignTimeRectangle="1110, 737, 86, 38" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='LABEL' aaname='{0}                                            ' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' visibleinnertext='{0}' matching:visibleinnertext='fuzzy' fuzzylevel:visibleinnertext='0.0' for='' matching:for='fuzzy' fuzzylevel:for='0.0' idx='7' /&gt;&quot;, size)]" Guid="b54f7f1a-bbc0-474e-ab0e-368bc9c206ab" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist | crema idratante | Negozio ufficiale Dermalogica – Dermalogica' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="283b0e55084f41ba9543973cc7f254bf.jpg" xmlns="">0x6LGw0f5sUqQ29owolJPwg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="" Name="size" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

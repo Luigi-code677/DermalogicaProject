@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ny8AQzeh30W106rbNYJWVw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.co.uk/products/active-moist" DesignTimeRectangle="1165, 779, 156, 55" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FuzzyAccuracy="0.7" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl tag='INPUT' type='radio' class='' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='{0}' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='{0}' /&gt;&quot;, size)]" Guid="7dacd510-caaf-4f56-8766-038f13d79145" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist, Oil-Free Moisturiser | Dermalogica® – Dermalogica UK' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1164, 778, 158, 57" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl tag='LABEL' type='' class='variant-option__button-label' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='                                                                                                       ' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' visibleinnertext='{0}' matching:visibleinnertext='fuzzy' fuzzylevel:visibleinnertext='0.0' check:innerText='50ml' /&gt;&quot;, size)]" Guid="22bc2be0-eaac-4ed1-a5f1-4ab480d5e13f" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="34eb09a2991f6a18475bf3a0970176f2.jpg" xmlns="">0Oj9EaGEGqUG0ga3NJHlo-w</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="size" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

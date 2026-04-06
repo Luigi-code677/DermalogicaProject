@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="I7_4lmQ0-EuK-WS5nje_MA" Reference="r3jqcW5wj0SvHD4YMQ6Cww/bv2Czn7lEUufr2nxf-Xt7g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.fr/products/lotion-hydratante-active-active-moist" DesignTimeRectangle="1225, 950, 128, 51" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="3923e393-6925-44bb-8599-83eda2189f47" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lotion Hydratante Active - Active Moist - Dermalogica' /&gt;" SearchSteps="SemanticSelector" SemanticSelectorArgument="[string.Format(&quot;Radio button to select the {0} size of the product.&quot;, size)]" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="0a7f72a6a2f0252ae1968eb0d3fd73e3.jpg" xmlns="">0PrX_Z9oN90qITaDPHuL5UA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

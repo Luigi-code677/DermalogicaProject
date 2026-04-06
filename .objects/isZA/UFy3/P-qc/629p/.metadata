@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Dermalogica UK Size Test",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "629p_O8-fECDC4m-Om_DDg",
+  "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/629p_O8-fECDC4m-Om_DDg",
+  "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/P-qcenvHdEq9bHKTicFYRg",
+  "Created": "2026-04-06T15:54:20.8566095Z",
+  "Updated": "2026-04-06T15:54:53.4726179Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

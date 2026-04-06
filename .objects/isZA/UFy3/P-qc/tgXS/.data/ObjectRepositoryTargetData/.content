@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wjN4j7e2M0ql8MZvS8fIfA" Reference="r3jqcW5wj0SvHD4YMQ6Cww/tgXSAaf3ekW5FRgIbQ7meA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.fr/products/lotion-hydratante-active-active-moist" CVScreenId="24935e40-6bfa-4ddf-bb3a-359319047350" CvElementArea="1094, 949, 120, 55" CvType="Button" DesignTimeRectangle="1096, 952, 115, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='                             50 ml                           ' tag='LABEL' /&gt;" Guid="37b3ad29-51b9-4cff-a475-1aeb75903169" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lotion Hydratante Active - Active Moist - Dermalogica' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="828, 254, 263, 27" ElementType="Icon" FullSelectorArgument="&lt;webctrl class='header__heading-logo' tag='IMG' /&gt;" Guid="7b9fef8c-3091-4e3b-b1d6-24fd758c1797" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4da1b96b5980d9a60aaffb99af45fa1d.jpg" xmlns="">00NrLFfL_TUmktFnBzPU8cA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

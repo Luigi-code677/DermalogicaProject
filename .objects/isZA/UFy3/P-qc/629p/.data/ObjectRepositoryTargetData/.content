@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YVs18n3ozEml3s0yJonsuw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.co.uk/products/active-moist" DesignTimeRectangle="1165, 779, 156, 55" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FuzzyAccuracy="0.7" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl tag='INPUT' type='radio' class='' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='{0}' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' aria-label='{0}' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' value='{0}' matching:value='fuzzy' fuzzylevel:value='0.0' /&gt;&quot;, size)]" Guid="32cc1006-345d-4b5c-b338-d11dbad13ab9" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist, Oil-Free Moisturiser | Dermalogica® – Dermalogica UK' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="acd35f1d2d85129b5261446cd8ded384.jpg" xmlns="">0iGLdD5XmnkiwkqHFrqfQfA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="size" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
