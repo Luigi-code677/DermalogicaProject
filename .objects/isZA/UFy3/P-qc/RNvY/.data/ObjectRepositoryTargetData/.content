@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ErtDYTLE3Ear72KhecvaCw" Reference="r3jqcW5wj0SvHD4YMQ6Cww/RNvYxQRQPUKqrbql5UG9ww" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.co.uk/products/active-moist" DesignTimeRectangle="1165, 777, 156, 55" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl tag='INPUT' type='radio' value='*&quot; + in_SizeMl + &quot;*' /&gt;&quot;]" FuzzySelectorArgument="[&quot;&lt;webctrl tag='INPUT' type='radio' value='*&quot; + in_SizeMl + &quot;*' /&gt;&quot;]" Guid="4a137405-06a8-4c95-8b63-109d51c5d010" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist, Oil-Free Moisturiser | Dermalogica® – Dermalogica UK' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="1164, 776, 158, 57" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='variant-option__button-label' aaname='                                                                                                       ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='50ml' /&gt;" Guid="45ad1cdd-264b-4b03-b1af-f059cfcb6323" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bcbf9328e34f170a9d3f3026c258aa62.jpg" xmlns="">0fT7ptNbQKUG_EvZ7JmokVA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

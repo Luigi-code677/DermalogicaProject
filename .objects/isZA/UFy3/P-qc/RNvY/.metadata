@@ -1,12 +1,12 @@
 ﻿{
-  "Name": "uk checked button",
+  "Name": "Derma Uk Size selector",
   "Type": "Element",
   "TaxonomyType": "RadioButton",
-  "Id": "cxIAlw1AGUuYkRfRDOdPQg",
-  "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/cxIAlw1AGUuYkRfRDOdPQg",
+  "Id": "RNvYxQRQPUKqrbql5UG9ww",
+  "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/RNvYxQRQPUKqrbql5UG9ww",
   "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/P-qcenvHdEq9bHKTicFYRg",
-  "Created": "2026-04-06T15:50:07.2971026Z",
-  "Updated": "2026-04-07T13:58:02.3478422Z",
+  "Created": "2026-04-07T13:33:52.6596043Z",
+  "Updated": "2026-04-07T13:34:17.0414216Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
     "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
