@@ -1,14 +1,17 @@
 ﻿{
-  "Name": "Produits",
+  "Name": "Fr first match",
   "Type": "Element",
   "TaxonomyType": "Icon",
   "Id": "1mLKkKUwuUWW-Jo2S9dWlA",
   "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/1mLKkKUwuUWW-Jo2S9dWlA",
   "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/P-qcenvHdEq9bHKTicFYRg",
   "Created": "2026-04-04T17:28:09.1046689Z",
-  "Updated": "2026-04-04T17:28:09.1046689Z",
+  "Updated": "2026-04-09T13:57:10.3537773Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
     "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
   ]
 }

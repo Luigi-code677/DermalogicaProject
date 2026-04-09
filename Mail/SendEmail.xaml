@@ -112,8 +112,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Mail process..." sap:VirtualizedContainerService.HintSize="478.3304347826087,173.63478260869564" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Mail process starting.&quot;]" />
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.3304347826087,148.59130434782608" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:LogMessage DisplayName="Mail process..." sap:VirtualizedContainerService.HintSize="478.3304347826087,173.63478260869564" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Mail process starting. Sending email...&quot;]" />
+    <ui:MultipleAssign DisplayName="Assigning attachments list" sap:VirtualizedContainerService.HintSize="478.3304347826087,148.59130434782608" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -127,7 +127,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" Email="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" Port="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" Server="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Action="Forward" AttachmentInputMode="FilePaths" AttachmentsCollection="[attachments]" Body="&quot;Here I share you the sharing spreadsheet.&quot;" ConnectionId="aafdc99c-0499-4734-bf21-2b2dc917efe2" ConnectionMode="IntegrationService" DisplayName="Send SMTP Email" EnableSSL="True" sap:VirtualizedContainerService.HintSize="478.3304347826087,394.85217391304343" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="False" SecureConnection="Auto" Subject="Sharing spreadsheet" To="[in_Mail]" UseISConnection="True" UseRichTextEditor="True">
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" Email="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" Port="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" Server="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Action="Forward" AttachmentInputMode="FilePaths" AttachmentsCollection="[attachments]" Body="&quot;Here I share you the sharing spreadsheet.&quot;" ConnectionId="aafdc99c-0499-4734-bf21-2b2dc917efe2" ConnectionMode="IntegrationService" DisplayName="Send Dermalogica Email" EnableSSL="True" sap:VirtualizedContainerService.HintSize="478.3304347826087,394.85217391304343" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="False" SecureConnection="Auto" Subject="Sharing spreadsheet" To="[in_Mail]" UseISConnection="True" UseRichTextEditor="True">
       <ui:SendMail.AttachmentsBackup>
         <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="FilePaths">
           <usau:BackupSlot.BackupValues>

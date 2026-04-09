@@ -129,9 +129,11 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="WriteExcel" sap:VirtualizedContainerService.HintSize="883.0434782608695,756.3130434782609" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="WriteExcel" sap:VirtualizedContainerService.HintSize="883.0434782608695,1103.5826086956522" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="rowIndex" />
       <Variable x:TypeArguments="x:Int32" Name="colIndex" />
@@ -142,7 +144,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="489.18260869565216,212.03478260869565" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+    <ui:LogMessage DisplayName="Starting Excel Writing" sap:VirtualizedContainerService.HintSize="489.18260869565216,173.63478260869564" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Starting Excel Writing - SKU: &quot; + in_SKU + &quot; Website: &quot; + in_Website + &quot; Price: &quot; + in_Price]" />
+    <ui:MultipleAssign DisplayName="Setting Excel row and col to write" sap:VirtualizedContainerService.HintSize="489.18260869565216,212.03478260869565" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
@@ -172,7 +175,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="489.18260869565216,520.9043478260869" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Dermalogica Template Process Scope" sap:VirtualizedContainerService.HintSize="489.18260869565216,529.2521739130434" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
@@ -184,7 +187,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="452.45217391304345,390.6782608695652" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[in_ExcelPath]">
+            <ueab:ExcelApplicationCard ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Dermalogica Template File" sap:VirtualizedContainerService.HintSize="452.45217391304345,390.6782608695652" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[in_ExcelPath]">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
@@ -199,7 +202,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ExcelWriteCell Cell="[cellRef]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="415.72173913043474,111.86086956521739" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="Pricing Report" Text="[in_Price]" />
+                    <ui:ExcelWriteCell Cell="[cellRef]" DisplayName="Write Price Cell" sap:VirtualizedContainerService.HintSize="415.72173913043474,111.86086956521739" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="Pricing Report" Text="[in_Price]" />
                   </Sequence>
                 </ActivityAction>
               </ueab:ExcelApplicationCard.Body>
@@ -208,5 +211,6 @@
         </ActivityAction>
       </ueab:ExcelProcessScopeX.Body>
     </ueab:ExcelProcessScopeX>
+    <ui:LogMessage DisplayName="Finishing Excel Writing" sap:VirtualizedContainerService.HintSize="489.18260869565216,165.2869565217391" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Price in Excel template succesfully added&quot;]" />
   </Sequence>
 </Activity>

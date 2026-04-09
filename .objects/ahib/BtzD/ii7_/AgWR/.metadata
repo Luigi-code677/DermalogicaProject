@@ -1,14 +1,17 @@
 ﻿{
-  "Name": "svg",
+  "Name": "US Search Button",
   "Type": "Element",
   "TaxonomyType": "Icon",
   "Id": "AgWRVbdyF0K7h6C0Sz6IbQ",
   "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/AgWRVbdyF0K7h6C0Sz6IbQ",
   "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/ii7_Eyd8-kWNryTeYU-LTQ",
   "Created": "2026-04-01T20:56:49.5037454Z",
-  "Updated": "2026-04-01T20:56:49.5037454Z",
+  "Updated": "2026-04-09T13:40:53.695562Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
     "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
   ]
 }

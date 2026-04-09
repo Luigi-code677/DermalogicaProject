@@ -1,14 +1,17 @@
 ﻿{
-  "Name": "IMG",
+  "Name": "US_Image first match",
   "Type": "Element",
   "TaxonomyType": "Icon",
   "Id": "To0sIrRRl0mXJD74_6lHlA",
   "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/To0sIrRRl0mXJD74_6lHlA",
   "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/P-qcenvHdEq9bHKTicFYRg",
   "Created": "2026-04-04T16:31:20.167524Z",
-  "Updated": "2026-04-04T16:31:20.167524Z",
+  "Updated": "2026-04-09T13:46:06.0768087Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
     "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
   ]
 }

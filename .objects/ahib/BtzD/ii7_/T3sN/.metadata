@@ -1,14 +1,17 @@
 ﻿{
-  "Name": "$49",
+  "Name": "US Price",
   "Type": "Element",
   "TaxonomyType": "Label",
   "Id": "T3sNeC2fJUumLOauzCkCuQ",
   "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/T3sNeC2fJUumLOauzCkCuQ",
   "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/ii7_Eyd8-kWNryTeYU-LTQ",
   "Created": "2026-04-01T21:09:09.2850614Z",
-  "Updated": "2026-04-01T21:09:09.2850614Z",
+  "Updated": "2026-04-09T13:49:05.5119351Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
     "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
   ]
 }

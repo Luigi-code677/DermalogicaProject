@@ -1,14 +1,17 @@
 ﻿{
-  "Name": "INPUT Search-In-Modal",
+  "Name": "US Search Input",
   "Type": "Element",
   "TaxonomyType": "Input",
   "Id": "2Gg43cUV1EeuE7V_WyCwRQ",
   "Reference": "r3jqcW5wj0SvHD4YMQ6Cww/2Gg43cUV1EeuE7V_WyCwRQ",
   "ParentRef": "r3jqcW5wj0SvHD4YMQ6Cww/ii7_Eyd8-kWNryTeYU-LTQ",
   "Created": "2026-04-01T20:58:03.6285723Z",
-  "Updated": "2026-04-01T20:58:03.6285723Z",
+  "Updated": "2026-04-09T13:41:22.8985811Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
     "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
   ]
 }
