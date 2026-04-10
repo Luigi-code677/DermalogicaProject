@@ -50,8 +50,6 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>UiPath.UIAutomationNext.Enums</x:String>
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
@@ -69,6 +67,8 @@
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>System.Numerics</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -136,7 +136,7 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetPriceFromWeb" sap:VirtualizedContainerService.HintSize="883.0434782608695,2861.6347826086953" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetPriceFromWeb" sap:VirtualizedContainerService.HintSize="883.0434782608695,2976" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="itemName">
         <Variable.Default>
@@ -150,8 +150,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Starting process" sap:VirtualizedContainerService.HintSize="489.18260869565216,173.63478260869564" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Starting searching process in &quot; + in_Variant + &quot; webpage&quot;]" />
-    <ui:MultipleAssign DisplayName="Name to Lower" sap:VirtualizedContainerService.HintSize="489.18260869565216,148.59130434782608" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:LogMessage DisplayName="Starting process" sap:VirtualizedContainerService.HintSize="525.9130434782609,173.63478260869564" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Starting searching process in &quot; + in_Variant + &quot; webpage&quot;]" />
+    <ui:MultipleAssign DisplayName="Name to Lower" sap:VirtualizedContainerService.HintSize="525.9130434782609,148.59130434782608" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -165,36 +165,38 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Dermalogica" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="489.18260869565216,2350.7478260869566" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="DermalogicaGeneral" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="525.9130434782609,2465.113043478261" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486.6782608695652,2147.895652173913" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="523.4086956521738,2262.260869565217" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Switch x:TypeArguments="x:String" DisplayName="Evaluating each website variant" Expression="[in_Variant]" sap:VirtualizedContainerService.HintSize="452.45217391304345,2087.791304347826" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+            <uix:NGoToUrl DisplayName="Go To Dermalogica" sap:VirtualizedContainerService.HintSize="489.18260869565216,121.87826086956521" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Url="[in_WebPage]" Version="V5" />
+            <Switch x:TypeArguments="x:String" DisplayName="Evaluating each website variant" Expression="[in_Variant]" sap:VirtualizedContainerService.HintSize="489.18260869565216,2080.278260869565" sap2010:WorkflowViewState.IdRef="Switch`1_2">
               <Switch.Default>
-                <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="449.94782608695647,225.39130434782606" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="486.6782608695652,25.043478260869563" sap2010:WorkflowViewState.IdRef="Sequence_23">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:LogMessage DisplayName="No variant detected" sap:VirtualizedContainerService.HintSize="415.72173913043474,165.2869565217391" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[&quot;No variant detected&quot;]" />
                 </Sequence>
               </Switch.Default>
-              <Sequence x:Key="US" DisplayName="For US case" sap:VirtualizedContainerService.HintSize="449.94782608695647,335.58260869565214" sap2010:WorkflowViewState.IdRef="Sequence_21">
+              <Sequence x:Key="US" DisplayName="For US case" sap:VirtualizedContainerService.HintSize="486.6782608695652,222.05217391304348" sap2010:WorkflowViewState.IdRef="Sequence_21">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Search product" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NClick_32" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Search product" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452.45217391304345,56.76521739130435" sap2010:WorkflowViewState.IdRef="NClick_32" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="dermalogica.com" ContentHash="eGc8P_6jc0aF9Ducs5HPhQ" DesignTimeRectangle="1574, 252, 22, 22" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' type='' parentid='shopify-section-header' tag='svg' class='modal__toggle-open icon icon-search' aaname='    ' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0ccc3751-bb8a-45e5-9c66-7f8402de4e63" InformativeScreenshot="224c5a0dd9f43c811ec3ce91eb817c1e.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/AgWRVbdyF0K7h6C0Sz6IbQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica® Skin Care | Official Site' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -211,7 +213,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NClick>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Item" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Text="[in_ProductName]" Version="V5">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Item" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452.45217391304345,56.76521739130435" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Text="[in_ProductName]" Version="V5">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="dermalogica.com" ContentHash="GwgAKwmZVUeVGv8bJJqMrg" DesignTimeRectangle="654, 267, 570, 54" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='Search-In-Modal' tag='INPUT' type='search' class='search__input field__input snize-input-style' placeholder='what are you looking for?' aaname='what are you looking for?' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d1ef9978-2eb6-4d33-a3b0-358a671030b7" InformativeScreenshot="934192b49554aee5eff427bb3c6bb163.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/2Gg43cUV1EeuE7V_WyCwRQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica® Skin Care | Official Site' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -238,7 +240,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NTypeInto>
-                <TryCatch DisplayName="Try to find the first match" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                <TryCatch DisplayName="Try to find the first match" sap:VirtualizedContainerService.HintSize="452.45217391304345,48.417391304347824" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -246,13 +248,13 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <TryCatch.Try>
-                    <Sequence DisplayName="Finding first match" sap:VirtualizedContainerService.HintSize="449.94782608695647,244.59130434782608" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                    <Sequence DisplayName="Finding first match" sap:VirtualizedContainerService.HintSize="449.94782608695647,165.2869565217391" sap2010:WorkflowViewState.IdRef="Sequence_38">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click first match" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,184.48695652173913" sap2010:WorkflowViewState.IdRef="NClick_33" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click first match" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NClick_33" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="dermalogica.com" ContentHash="ZzJvdyMBLECtMXb_iTJmTA" DesignTimeRectangle="843, 391, 173, 174" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='IMG' type='' /&gt;" Guid="7fa2ea43-a254-4e37-a7e3-ac7c1b3d0407" InformativeScreenshot="d2dcc42c729edecc5d59fa4505e7967c.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/To0sIrRRl0mXJD74_6lHlA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica® Skin Care | Official Site' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
                             <uix:TargetAnchorable.Anchors>
@@ -262,7 +264,68 @@
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
                         </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
+                      <uix:NCheckState DisplayName="Check App State 'Size - Us Button'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="415.72173913043474,48.417391304347824" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
+                        <uix:NCheckState.IfExists>
+                          <Sequence DisplayName="Size appears" sap:VirtualizedContainerService.HintSize="449.94782608695647,25.043478260869563" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Size" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,192.83478260869563" sap2010:WorkflowViewState.IdRef="NClick_46" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="dermalogica.com/products/active-moist" ContentHash="OCJJaeAsDkO-1a8b2lbCfA" DesignTimeRectangle="1319, 832, 115, 43" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeOz+&quot;*' tag='LABEL' /&gt;&quot;]" Guid="610b89a5-7aff-4558-9c3b-65e80eb8cc3a" InformativeScreenshot="7d95f34d3a5a6f6ad4e4c2ba6bf46f8f.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/lK94laHM70CiZSRIFEw-2g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist Lightweight Face Moisturizer for Oily Skin | Dermalogica®' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NGetText DisplayName="Get Price" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,48.417391304347824" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" TextString="[out_Price]" Version="V5">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="dermalogica.com/products/active-moist" ContentHash="oud90v-aqUi9ou93FQvWkA" DesignTimeRectangle="1192, 634, 52, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='price-item' tag='H3' /&gt;" Guid="71cc04fd-f643-45b4-b759-3223e75dffc7" InformativeScreenshot="e961bfb7589464dbf5d064ef2d224993.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/T3sNeC2fJUumLOauzCkCuQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist Lightweight Face Moisturizer for Oily Skin | Dermalogica®' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NGetText.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NGetText>
+                          </Sequence>
+                        </uix:NCheckState.IfExists>
+                        <uix:NCheckState.IfNotExists>
+                          <Sequence DisplayName="Size does not appear" sap:VirtualizedContainerService.HintSize="449.94782608695647,399.02608695652174" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Size not found" sap:VirtualizedContainerService.HintSize="415.72173913043474,173.63478260869564" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Size not found&quot;]" />
+                            <Assign DisplayName="Set SNF" sap:VirtualizedContainerService.HintSize="415.72173913043474,165.2869565217391" sap2010:WorkflowViewState.IdRef="Assign_9">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[out_Price]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">["SNF"]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </uix:NCheckState.IfNotExists>
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable BrowserURL="dermalogica.com/products/active-moist" ContentHash="OCJJaeAsDkO-1a8b2lbCfA" DesignTimeRectangle="1319, 832, 115, 43" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeOz+&quot;*' tag='LABEL' /&gt;&quot;]" Guid="610b89a5-7aff-4558-9c3b-65e80eb8cc3a" InformativeScreenshot="7d95f34d3a5a6f6ad4e4c2ba6bf46f8f.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/lK94laHM70CiZSRIFEw-2g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist Lightweight Face Moisturizer for Oily Skin | Dermalogica®' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NCheckState.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NCheckState>
                     </Sequence>
                   </TryCatch.Try>
                   <TryCatch.Catches>
@@ -300,68 +363,14 @@
                     </Sequence>
                   </TryCatch.Finally>
                 </TryCatch>
-                <uix:NCheckState DisplayName="Check App State 'Size - Us Button'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
-                  <uix:NCheckState.IfExists>
-                    <Sequence DisplayName="Size appears" sap:VirtualizedContainerService.HintSize="449.94782608695647,244.59130434782608" sap2010:WorkflowViewState.IdRef="Sequence_59">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Size" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,184.48695652173913" sap2010:WorkflowViewState.IdRef="NClick_46" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
-                        <uix:NClick.Target>
-                          <uix:TargetAnchorable BrowserURL="dermalogica.com/products/active-moist" ContentHash="OCJJaeAsDkO-1a8b2lbCfA" DesignTimeRectangle="1319, 832, 115, 43" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeOz+&quot;*' tag='LABEL' /&gt;&quot;]" Guid="610b89a5-7aff-4558-9c3b-65e80eb8cc3a" InformativeScreenshot="7d95f34d3a5a6f6ad4e4c2ba6bf46f8f.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/lK94laHM70CiZSRIFEw-2g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist Lightweight Face Moisturizer for Oily Skin | Dermalogica®' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                        </uix:NClick.Target>
-                      </uix:NClick>
-                    </Sequence>
-                  </uix:NCheckState.IfExists>
-                  <uix:NCheckState.IfNotExists>
-                    <Sequence DisplayName="Size does not appear" sap:VirtualizedContainerService.HintSize="449.94782608695647,399.02608695652174" sap2010:WorkflowViewState.IdRef="Sequence_60">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Size not found" sap:VirtualizedContainerService.HintSize="415.72173913043474,173.63478260869564" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Size not found&quot;]" />
-                      <Assign DisplayName="Set SNF" sap:VirtualizedContainerService.HintSize="415.72173913043474,165.2869565217391" sap2010:WorkflowViewState.IdRef="Assign_9">
-                        <Assign.To>
-                          <OutArgument x:TypeArguments="x:String">[out_Price]</OutArgument>
-                        </Assign.To>
-                        <Assign.Value>
-                          <InArgument x:TypeArguments="x:String">["SNF"]</InArgument>
-                        </Assign.Value>
-                      </Assign>
-                    </Sequence>
-                  </uix:NCheckState.IfNotExists>
-                  <uix:NCheckState.Target>
-                    <uix:TargetAnchorable BrowserURL="dermalogica.com/products/active-moist" ContentHash="OCJJaeAsDkO-1a8b2lbCfA" DesignTimeRectangle="1319, 832, 115, 43" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeOz+&quot;*' tag='LABEL' /&gt;&quot;]" Guid="610b89a5-7aff-4558-9c3b-65e80eb8cc3a" InformativeScreenshot="7d95f34d3a5a6f6ad4e4c2ba6bf46f8f.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/lK94laHM70CiZSRIFEw-2g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist Lightweight Face Moisturizer for Oily Skin | Dermalogica®' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                  </uix:NCheckState.Target>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </uix:NCheckState>
-                <uix:NGetText DisplayName="Get Price" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,48.417391304347824" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" TextString="[out_Price]" Version="V5">
-                  <uix:NGetText.Target>
-                    <uix:TargetAnchorable BrowserURL="dermalogica.com/products/active-moist" ContentHash="oud90v-aqUi9ou93FQvWkA" DesignTimeRectangle="1192, 634, 52, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='price-item' tag='H3' /&gt;" Guid="71cc04fd-f643-45b4-b759-3223e75dffc7" InformativeScreenshot="e961bfb7589464dbf5d064ef2d224993.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/T3sNeC2fJUumLOauzCkCuQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist Lightweight Face Moisturizer for Oily Skin | Dermalogica®' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                  </uix:NGetText.Target>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </uix:NGetText>
               </Sequence>
-              <Sequence x:Key="Dermalogica UK.com" DisplayName="For UK Case" sap:VirtualizedContainerService.HintSize="449.94782608695647,392.3478260869565" sap2010:WorkflowViewState.IdRef="Sequence_22">
+              <Sequence x:Key="Dermalogica UK.com" DisplayName="For UK Case" sap:VirtualizedContainerService.HintSize="486.6782608695652,392.3478260869565" sap2010:WorkflowViewState.IdRef="Sequence_22">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click search" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click search" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452.45217391304345,56.76521739130435" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="dermalogica.co.uk" ContentHash="fdeRGC3Ru0qTrt9bhvOAig" DesignTimeRectangle="1670, 213, 52, 53" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Open search' idx='2' tag='BUTTON' /&gt;" Guid="e23f5fc0-7695-4c69-82bf-9b19f7993b28" InformativeScreenshot="b6a3ed0bc93963de73d86e51dcaff65b.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/GlPQKB4wEkG_2mPe827aJw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica Skin Care | Official – Dermalogica UK' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                   </uix:NClick.Target>
@@ -372,7 +381,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NClick>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Search product" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Text="[in_ProductName]" Version="V5">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Search product" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452.45217391304345,56.76521739130435" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Text="[in_ProductName]" Version="V5">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="dermalogica.co.uk" ContentHash="Yo8HAGp-rk6hSFtnZgmDOA" DesignTimeRectangle="571, 281, 743, 54" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cmdk-input' tag='INPUT' /&gt;" Guid="c1057922-41c5-4f61-8e48-b83b907c4c14" InformativeScreenshot="163f82af39898aa28a6aab60f897a828.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/r0Z9kJ0UXUG7T1uD6giuIw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica Skin Care | Official – Dermalogica UK' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                   </uix:NTypeInto.Target>
@@ -393,7 +402,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NTypeInto>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'View all'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NClick_36" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'View all'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452.45217391304345,56.76521739130435" sap2010:WorkflowViewState.IdRef="NClick_36" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="dermalogica.co.uk" ContentHash="ViSuYBIaxUC2aFzRrNj72w" DesignTimeRectangle="908, 733, 121, 51" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='           View all         ' parentid='search-modal' tag='BUTTON' /&gt;" Guid="d0a8c494-fe9d-428e-8a9e-0148689a4612" InformativeScreenshot="798149f5c4de7a7819ec2360babdfac5.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/dtTCrOCcr0aYcdaGQ-sr-A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica Skin Care | Official – Dermalogica UK' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                   </uix:NClick.Target>
@@ -404,7 +413,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NClick>
-                <TryCatch DisplayName="Trying to get first match" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                <TryCatch DisplayName="Trying to get first match" sap:VirtualizedContainerService.HintSize="452.45217391304345,56.76521739130435" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -462,7 +471,7 @@
                     </Sequence>
                   </TryCatch.Finally>
                 </TryCatch>
-                <uix:NCheckState DisplayName="Check App State 'Derma Uk Size selector'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Timeout="2" Version="V5">
+                <uix:NCheckState DisplayName="Check App State 'Derma Uk Size selector'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452.45217391304345,56.76521739130435" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Timeout="2" Version="V5">
                   <uix:NCheckState.IfExists>
                     <Sequence DisplayName="Size appears" sap:VirtualizedContainerService.HintSize="449.94782608695647,244.59130434782608" sap2010:WorkflowViewState.IdRef="Sequence_36">
                       <sap:WorkflowViewStateService.ViewState>
@@ -517,7 +526,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NCheckState>
-                <uix:NGetText DisplayName="Get Price" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,48.417391304347824" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" TextString="[out_Price]" Version="V5">
+                <uix:NGetText DisplayName="Get Price" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452.45217391304345,48.417391304347824" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" TextString="[out_Price]" Version="V5">
                   <uix:NGetText.Target>
                     <uix:TargetAnchorable BrowserURL="dermalogica.co.uk/products/active-moist" ContentHash="nf_SCZLiKUuo_b5b_GqD6Q" DesignTimeRectangle="1164, 390, 73, 28" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='price' tag='SPAN' /&gt;" Guid="cec5f266-e394-423c-977f-49bafecb1fdd" InformativeScreenshot="413e053a884ce998e58a5e13c83d1a2f.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/SKlfXYfJ2E6YBkSxyfcGXw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist, Oil-Free Moisturiser | Dermalogica® – Dermalogica UK' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                   </uix:NGetText.Target>
@@ -529,13 +538,13 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NGetText>
               </Sequence>
-              <Sequence x:Key="Dermalogica France" DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.94782608695647,335.58260869565214" sap2010:WorkflowViewState.IdRef="Sequence_24">
+              <Sequence x:Key="Dermalogica France" DisplayName="Body" sap:VirtualizedContainerService.HintSize="486.6782608695652,222.05217391304348" sap2010:WorkflowViewState.IdRef="Sequence_24">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Search" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NClick_39" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Search" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452.45217391304345,56.76521739130435" sap2010:WorkflowViewState.IdRef="NClick_39" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="dermalogica.fr" ContentHash="n1iuKCgud0moglkwfyQSpQ" DesignTimeRectangle="1679, 254, 20, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;sticky-header&amp;gt;header&amp;gt;div&amp;gt;details-modal&amp;gt;details&amp;gt;summary&amp;gt;span&amp;gt;svg&amp;gt;use' href='#icon-search' tag='use' /&gt;" Guid="cdbc6586-9107-40a3-9fb8-566ce952eb00" InformativeScreenshot="b8af4cdf7bd0bfb6e24e7faadccc744b.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/O6ds2HPSRE-ySjYdjY0FvA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Découvrez Dermalogica : le meilleur des soins visage' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                   </uix:NClick.Target>
@@ -546,7 +555,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NClick>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into Search" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="SameAsCard" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Text="[in_ProductName]" Version="V5">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into Search" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452.45217391304345,56.76521739130435" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="SameAsCard" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Text="[in_ProductName]" Version="V5">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="dermalogica.fr" ContentHash="58hs9J9ZzU-U1oCSVplnFA" DesignTimeRectangle="626, 269, 685, 64" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='Search-In-Modal' tag='INPUT' type='search' class='search__input field__input' placeholder='Recherche' aaname='Recherche' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ad4839d4-14cc-4775-b310-a2efb743dc16" InformativeScreenshot="7f4bb815e70439d9cc5fa0d43a4c826c.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/_-FNAunV4keeDUyLWd74GA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Découvrez Dermalogica : le meilleur des soins visage' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -573,7 +582,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NTypeInto>
-                <TryCatch DisplayName="Trying to get first match" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                <TryCatch DisplayName="Trying to get first match" sap:VirtualizedContainerService.HintSize="452.45217391304345,48.417391304347824" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -581,13 +590,13 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <TryCatch.Try>
-                    <Sequence DisplayName="Getting first match" sap:VirtualizedContainerService.HintSize="449.94782608695647,108.52173913043478" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                    <Sequence DisplayName="Getting first match" sap:VirtualizedContainerService.HintSize="449.94782608695647,165.2869565217391" sap2010:WorkflowViewState.IdRef="Sequence_44">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click first match" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,48.417391304347824" sap2010:WorkflowViewState.IdRef="NClick_40" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click first match" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NClick_40" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="dermalogica.fr" ContentHash="IXlZ2303_Em8AJec99RDGw" DesignTimeRectangle="653, 400, 60, 60" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='IMG' type='' class='predictive-search__image' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="88922df5-2ea3-40b5-8520-cd0e530e466a" InformativeScreenshot="488422ee61e36774a940b1ceb8bfa343.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/1mLKkKUwuUWW-Jo2S9dWlA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Découvrez Dermalogica : le meilleur des soins visage' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
                             <uix:TargetAnchorable.Anchors>
@@ -604,6 +613,62 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
+                      <uix:NCheckState DisplayName="Check App State 'Size - Fr Button'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="415.72173913043474,48.417391304347824" sap2010:WorkflowViewState.IdRef="NCheckState_9" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Timeout="2" Version="V5">
+                        <uix:NCheckState.IfExists>
+                          <Sequence DisplayName="Size appears" sap:VirtualizedContainerService.HintSize="449.94782608695647,301.3565217391304" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click fr size" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,192.83478260869563" sap2010:WorkflowViewState.IdRef="NClick_53" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="dermalogica.fr/products/lotion-hydratante-active-active-moist" ContentHash="kaXb7hpGn0GJE8DsLy8pcg" DesignTimeRectangle="1096, 353, 115, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeMl+&quot;*' tag='LABEL'/&gt;&quot;]" FuzzySelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeMl+&quot;*' tag='LABEL'/&gt;&quot;]" Guid="5fc9a90a-53b0-4bf4-b999-83e3ec15daab" InformativeScreenshot="7fabc5c6c79dad328c1bcb9fe3b0bb88.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/Kok0IeeP30eFqceN28NhEQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lotion Hydratante Active - Active Moist - Dermalogica' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NGetText DisplayName="Get Price" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,48.417391304347824" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" TextString="[out_Price]" Version="V5">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="dermalogica.fr/products/lotion-hydratante-active-active-moist" ContentHash="uV497T8xMUWilOmjcMLB8Q" DesignTimeRectangle="1096, 451, 85, 28" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='price-item price-item--regular' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="3b126622-658e-454e-8284-78067bf89376" InformativeScreenshot="d03a75a04cd684c93a1c1cb18fc6ad3d.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/ba1uqMNozkOO3YUZjo60dA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lotion Hydratante Active - Active Moist - Dermalogica' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NGetText.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NGetText>
+                          </Sequence>
+                        </uix:NCheckState.IfExists>
+                        <uix:NCheckState.IfNotExists>
+                          <Sequence DisplayName="Size does not appear" sap:VirtualizedContainerService.HintSize="449.94782608695647,25.043478260869563" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Size not found" sap:VirtualizedContainerService.HintSize="415.72173913043474,173.63478260869564" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Size not found&quot;]" />
+                            <Assign DisplayName="Set SNF" sap:VirtualizedContainerService.HintSize="415.72173913043474,165.2869565217391" sap2010:WorkflowViewState.IdRef="Assign_10">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[out_Price]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">["SNF"]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </uix:NCheckState.IfNotExists>
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable BrowserURL="dermalogica.fr/products/lotion-hydratante-active-active-moist" ContentHash="kaXb7hpGn0GJE8DsLy8pcg" DesignTimeRectangle="1096, 353, 115, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeMl+&quot;*' tag='LABEL'/&gt;&quot;]" FuzzySelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeMl+&quot;*' tag='LABEL'/&gt;&quot;]" Guid="5fc9a90a-53b0-4bf4-b999-83e3ec15daab" InformativeScreenshot="7fabc5c6c79dad328c1bcb9fe3b0bb88.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/Kok0IeeP30eFqceN28NhEQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lotion Hydratante Active - Active Moist - Dermalogica' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NCheckState.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NCheckState>
                     </Sequence>
                   </TryCatch.Try>
                   <TryCatch.Catches>
@@ -612,20 +677,33 @@
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.94782608695647,399.02608695652174" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.94782608695647,165.2869565217391" sap2010:WorkflowViewState.IdRef="Sequence_45">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:LogMessage DisplayName="Product not found" sap:VirtualizedContainerService.HintSize="415.72173913043474,173.63478260869564" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Product not found&quot;]" />
-                          <Assign DisplayName="Set PNF" sap:VirtualizedContainerService.HintSize="415.72173913043474,165.2869565217391" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <ui:LogMessage DisplayName="Product not found" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Product not found&quot;]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:LogMessage>
+                          <Assign DisplayName="Set PNF" sap:VirtualizedContainerService.HintSize="415.72173913043474,48.417391304347824" sap2010:WorkflowViewState.IdRef="Assign_3">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[out_Price]</OutArgument>
                             </Assign.To>
                             <Assign.Value>
                               <InArgument x:TypeArguments="x:String">["PNF"]</InArgument>
                             </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
                           </Assign>
                         </Sequence>
                       </ActivityAction>
@@ -642,69 +720,14 @@
                     </Sequence>
                   </TryCatch.Finally>
                 </TryCatch>
-                <uix:NCheckState DisplayName="Check App State 'Size - Fr Button'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NCheckState_9" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Timeout="2" Version="V5">
-                  <uix:NCheckState.IfExists>
-                    <Sequence DisplayName="Size appears" sap:VirtualizedContainerService.HintSize="449.94782608695647,25.043478260869563" sap2010:WorkflowViewState.IdRef="Sequence_61">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click fr size" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,184.48695652173913" sap2010:WorkflowViewState.IdRef="NClick_53" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
-                        <uix:NClick.Target>
-                          <uix:TargetAnchorable BrowserURL="dermalogica.fr/products/lotion-hydratante-active-active-moist" ContentHash="kaXb7hpGn0GJE8DsLy8pcg" DesignTimeRectangle="1096, 353, 115, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeMl+&quot;*' tag='LABEL'/&gt;&quot;]" FuzzySelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeMl+&quot;*' tag='LABEL'/&gt;&quot;]" Guid="5fc9a90a-53b0-4bf4-b999-83e3ec15daab" InformativeScreenshot="7fabc5c6c79dad328c1bcb9fe3b0bb88.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/Kok0IeeP30eFqceN28NhEQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lotion Hydratante Active - Active Moist - Dermalogica' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
-                        </uix:NClick.Target>
-                      </uix:NClick>
-                    </Sequence>
-                  </uix:NCheckState.IfExists>
-                  <uix:NCheckState.IfNotExists>
-                    <Sequence DisplayName="Size does not appear" sap:VirtualizedContainerService.HintSize="449.94782608695647,399.02608695652174" sap2010:WorkflowViewState.IdRef="Sequence_62">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Size not found" sap:VirtualizedContainerService.HintSize="415.72173913043474,173.63478260869564" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Size not found&quot;]" />
-                      <Assign DisplayName="Set SNF" sap:VirtualizedContainerService.HintSize="415.72173913043474,165.2869565217391" sap2010:WorkflowViewState.IdRef="Assign_10">
-                        <Assign.To>
-                          <OutArgument x:TypeArguments="x:String">[out_Price]</OutArgument>
-                        </Assign.To>
-                        <Assign.Value>
-                          <InArgument x:TypeArguments="x:String">["SNF"]</InArgument>
-                        </Assign.Value>
-                      </Assign>
-                    </Sequence>
-                  </uix:NCheckState.IfNotExists>
-                  <uix:NCheckState.Target>
-                    <uix:TargetAnchorable BrowserURL="dermalogica.fr/products/lotion-hydratante-active-active-moist" ContentHash="kaXb7hpGn0GJE8DsLy8pcg" DesignTimeRectangle="1096, 353, 115, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeMl+&quot;*' tag='LABEL'/&gt;&quot;]" FuzzySelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeMl+&quot;*' tag='LABEL'/&gt;&quot;]" Guid="5fc9a90a-53b0-4bf4-b999-83e3ec15daab" InformativeScreenshot="7fabc5c6c79dad328c1bcb9fe3b0bb88.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/Kok0IeeP30eFqceN28NhEQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lotion Hydratante Active - Active Moist - Dermalogica' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
-                  </uix:NCheckState.Target>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </uix:NCheckState>
-                <uix:NGetText DisplayName="Get Price" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,48.417391304347824" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" TextString="[out_Price]" Version="V5">
-                  <uix:NGetText.Target>
-                    <uix:TargetAnchorable BrowserURL="dermalogica.fr/products/lotion-hydratante-active-active-moist" ContentHash="uV497T8xMUWilOmjcMLB8Q" DesignTimeRectangle="1096, 451, 85, 28" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='price-item price-item--regular' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="3b126622-658e-454e-8284-78067bf89376" InformativeScreenshot="d03a75a04cd684c93a1c1cb18fc6ad3d.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/ba1uqMNozkOO3YUZjo60dA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lotion Hydratante Active - Active Moist - Dermalogica' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
-                  </uix:NGetText.Target>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </uix:NGetText>
               </Sequence>
-              <Sequence x:Key="Dermalogica Italy" DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.94782608695647,478.3304347826087" sap2010:WorkflowViewState.IdRef="Sequence_25">
+              <Sequence x:Key="Dermalogica Italy" DisplayName="Body" sap:VirtualizedContainerService.HintSize="486.6782608695652,898.2260869565217" sap2010:WorkflowViewState.IdRef="Sequence_25">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ActivateBefore="True" ClickType="[UiPath.UIAutomationNext.Enums.NClickType.Double]" DisplayName="Click Search" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NClick_42" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
+                <uix:NClick ActivateBefore="True" ClickType="[UiPath.UIAutomationNext.Enums.NClickType.Double]" DisplayName="Click Search" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452.45217391304345,56.76521739130435" sap2010:WorkflowViewState.IdRef="NClick_42" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="dermalogica.it" ContentHash="GcunzaK2MkOBw7rhWhABsA" DesignTimeRectangle="507, 245, 21, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;sticky-header&amp;gt;header&amp;gt;details-modal&amp;gt;details&amp;gt;summary&amp;gt;span&amp;gt;svg&amp;gt;use' href='#icon-search' tag='use' /&gt;" Guid="be8125bf-e857-4dfa-afdd-7acf2988ff3e" InformativeScreenshot="0bc72c53b64b53ea117f7857e186ce62.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/dT7POay-wEuqJ9AHD7nj7g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica | Negozio ufficiale | cura della pelle di livello professionale – Dermalogica' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                   </uix:NClick.Target>
@@ -715,7 +738,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NClick>
-                <uix:NCheckState DisplayName="Check App State 'Search Bar'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Timeout="3" Version="V5">
+                <uix:NCheckState DisplayName="Check App State 'Search Bar'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452.45217391304345,676.1739130434783" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Timeout="3" Version="V5">
                   <uix:NCheckState.IfExists>
                     <Sequence DisplayName="Search bar appears" sap:VirtualizedContainerService.HintSize="449.94782608695647,89.32173913043478" sap2010:WorkflowViewState.IdRef="Sequence_29">
                       <sap:WorkflowViewStateService.ViewState>
@@ -732,7 +755,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ActivateBefore="True" ClickType="[UiPath.UIAutomationNext.Enums.NClickType.Double]" DisplayName="Click Search" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,184.48695652173913" sap2010:WorkflowViewState.IdRef="NClick_45" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
+                      <uix:NClick ActivateBefore="True" ClickType="[UiPath.UIAutomationNext.Enums.NClickType.Single]" DisplayName="Click Search" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,184.48695652173913" sap2010:WorkflowViewState.IdRef="NClick_45" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="dermalogica.it" ContentHash="GcunzaK2MkOBw7rhWhABsA" DesignTimeRectangle="507, 245, 21, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;sticky-header&amp;gt;header&amp;gt;details-modal&amp;gt;details&amp;gt;summary&amp;gt;span&amp;gt;svg&amp;gt;use' href='#icon-search' tag='use' /&gt;" Guid="be8125bf-e857-4dfa-afdd-7acf2988ff3e" InformativeScreenshot="0bc72c53b64b53ea117f7857e186ce62.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/dT7POay-wEuqJ9AHD7nj7g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica | Negozio ufficiale | cura della pelle di livello professionale – Dermalogica' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                         </uix:NClick.Target>
@@ -750,12 +773,12 @@
                   </uix:NCheckState.Target>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NCheckState>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into Search" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="SameAsCard" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Text="[in_ProductName]" Version="V5">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into Search" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452.45217391304345,56.76521739130435" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="SameAsCard" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Text="[in_ProductName]" Version="V5">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="dermalogica.it" ContentHash="fVRQDISPM0mQorcnX6o84g" DesignTimeRectangle="657, 254, 570, 54" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='Search-In-Modal-1' tag='INPUT' type='search' class='search__input field__input ed-df-trigger' placeholder='Cerca' aaname='Cerca' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9b13faf1-3a8b-4319-8174-ea0ebee4cadf" InformativeScreenshot="d5101ee2975612440d90c815e4824575.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/J4j1F8dza0yoVYvKfu19og" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica | Negozio ufficiale | cura della pelle di livello professionale – Dermalogica' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -782,7 +805,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NTypeInto>
-                <TryCatch DisplayName="Trying get first match" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                <TryCatch DisplayName="Trying get first match" sap:VirtualizedContainerService.HintSize="452.45217391304345,48.417391304347824" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -790,14 +813,14 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <TryCatch.Try>
-                    <Sequence DisplayName="Getting first match" sap:VirtualizedContainerService.HintSize="449.94782608695647,25.043478260869563" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                    <Sequence DisplayName="Getting first match" sap:VirtualizedContainerService.HintSize="449.94782608695647,165.2869565217391" sap2010:WorkflowViewState.IdRef="Sequence_47">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click first match" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,184.48695652173913" sap2010:WorkflowViewState.IdRef="NClick_43" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click first match" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NClick_43" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="dermalogica.it" ContentHash="atH5mLGrMkKT2ZOqxFzz0Q" DesignTimeRectangle="680, 362, 60, 60" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='predictive-search-option-1' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='IMG' type='' class='predictive-search__image' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="ae671679-046f-491b-8b46-672c8d14c6fb" InformativeScreenshot="4bd6ccddf429c721da4e14d47d499fc7.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/Nlm1yHqzEkGicdSbBqrd-w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica | Negozio ufficiale | cura della pelle di livello professionale – Dermalogica' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
                             <uix:TargetAnchorable.Anchors>
@@ -807,7 +830,68 @@
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
                         </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
+                      <uix:NCheckState DisplayName="Check App State 'Size - It Button'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="415.72173913043474,48.417391304347824" sap2010:WorkflowViewState.IdRef="NCheckState_10" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Timeout="2" Version="V5">
+                        <uix:NCheckState.IfExists>
+                          <Sequence DisplayName="Size appears" sap:VirtualizedContainerService.HintSize="449.94782608695647,301.3565217391304" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click it variant" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,192.83478260869563" sap2010:WorkflowViewState.IdRef="NClick_55" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="dermalogica.it/products/active-moist" ContentHash="YFQjYXYdwkGu_n422MAXYw" DesignTimeRectangle="1208, 739, 94, 38" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeMl+&quot;*' parentid='variant_selector_1' tag='LABEL' /&gt;&quot;]" Guid="40ce3162-986b-4602-a97c-78906d6078e2" InformativeScreenshot="6982b18bd14bad2d0f12395ad83969d0.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/nnzxUCkZk0qEEutsQHS6mA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist | crema idratante | Negozio ufficiale Dermalogica – Dermalogica' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NGetText DisplayName="Get Price" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,48.417391304347824" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" TextString="[out_Price]" Version="V5">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="dermalogica.it/products/active-moist" ContentHash="yAchjYNmbUWGeScctaZWXQ" DesignTimeRectangle="1110, 565, 76, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='price-item price-item--regular' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="380bd6b0-42d1-4c92-966c-f61624f4d427" InformativeScreenshot="3e91bb12dbc0d4d7eebbe504a5e19cf3.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/9N5UPlHkwk2GOGXgHLBX2g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist | crema idratante | Negozio ufficiale Dermalogica – Dermalogica' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NGetText.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NGetText>
+                          </Sequence>
+                        </uix:NCheckState.IfExists>
+                        <uix:NCheckState.IfNotExists>
+                          <Sequence DisplayName="Size does not appear" sap:VirtualizedContainerService.HintSize="449.94782608695647,25.043478260869563" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Size not found" sap:VirtualizedContainerService.HintSize="415.72173913043474,173.63478260869564" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Size not found&quot;]" />
+                            <Assign DisplayName="Set SNF" sap:VirtualizedContainerService.HintSize="415.72173913043474,165.2869565217391" sap2010:WorkflowViewState.IdRef="Assign_11">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[out_Price]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">["SNF"]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </uix:NCheckState.IfNotExists>
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable BrowserURL="dermalogica.fr/products/lotion-hydratante-active-active-moist" ContentHash="kaXb7hpGn0GJE8DsLy8pcg" DesignTimeRectangle="1096, 353, 115, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeMl+&quot;*' tag='LABEL'/&gt;&quot;]" FuzzySelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeMl+&quot;*' tag='LABEL'/&gt;&quot;]" Guid="5fc9a90a-53b0-4bf4-b999-83e3ec15daab" InformativeScreenshot="7fabc5c6c79dad328c1bcb9fe3b0bb88.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/Kok0IeeP30eFqceN28NhEQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lotion Hydratante Active - Active Moist - Dermalogica' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NCheckState.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NCheckState>
                     </Sequence>
                   </TryCatch.Try>
                   <TryCatch.Catches>
@@ -816,20 +900,33 @@
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.94782608695647,399.02608695652174" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.94782608695647,165.2869565217391" sap2010:WorkflowViewState.IdRef="Sequence_48">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:LogMessage DisplayName="Product not found" sap:VirtualizedContainerService.HintSize="415.72173913043474,173.63478260869564" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Product not found&quot;]" />
-                          <Assign DisplayName="Set PNF" sap:VirtualizedContainerService.HintSize="415.72173913043474,165.2869565217391" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <ui:LogMessage DisplayName="Product not found" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Product not found&quot;]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:LogMessage>
+                          <Assign DisplayName="Set PNF" sap:VirtualizedContainerService.HintSize="415.72173913043474,48.417391304347824" sap2010:WorkflowViewState.IdRef="Assign_4">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[out_Price]</OutArgument>
                             </Assign.To>
                             <Assign.Value>
                               <InArgument x:TypeArguments="x:String">["PNF"]</InArgument>
                             </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
                           </Assign>
                         </Sequence>
                       </ActivityAction>
@@ -845,54 +942,6 @@
                     </Sequence>
                   </TryCatch.Finally>
                 </TryCatch>
-                <uix:NCheckState DisplayName="Check App State 'Size - It Button'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="415.72173913043474,56.76521739130435" sap2010:WorkflowViewState.IdRef="NCheckState_10" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Timeout="2" Version="V5">
-                  <uix:NCheckState.IfExists>
-                    <Sequence DisplayName="Size appears" sap:VirtualizedContainerService.HintSize="449.94782608695647,244.59130434782608" sap2010:WorkflowViewState.IdRef="Sequence_63">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click it variant" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,184.48695652173913" sap2010:WorkflowViewState.IdRef="NClick_55" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" Version="V5">
-                        <uix:NClick.Target>
-                          <uix:TargetAnchorable BrowserURL="dermalogica.it/products/active-moist" ContentHash="YFQjYXYdwkGu_n422MAXYw" DesignTimeRectangle="1208, 739, 94, 38" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeMl+&quot;*' parentid='variant_selector_1' tag='LABEL' /&gt;&quot;]" Guid="40ce3162-986b-4602-a97c-78906d6078e2" InformativeScreenshot="6982b18bd14bad2d0f12395ad83969d0.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/nnzxUCkZk0qEEutsQHS6mA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist | crema idratante | Negozio ufficiale Dermalogica – Dermalogica' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                        </uix:NClick.Target>
-                      </uix:NClick>
-                    </Sequence>
-                  </uix:NCheckState.IfExists>
-                  <uix:NCheckState.IfNotExists>
-                    <Sequence DisplayName="Size does not appear" sap:VirtualizedContainerService.HintSize="449.94782608695647,399.02608695652174" sap2010:WorkflowViewState.IdRef="Sequence_64">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Size not found" sap:VirtualizedContainerService.HintSize="415.72173913043474,173.63478260869564" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Size not found&quot;]" />
-                      <Assign DisplayName="Set SNF" sap:VirtualizedContainerService.HintSize="415.72173913043474,165.2869565217391" sap2010:WorkflowViewState.IdRef="Assign_11">
-                        <Assign.To>
-                          <OutArgument x:TypeArguments="x:String">[out_Price]</OutArgument>
-                        </Assign.To>
-                        <Assign.Value>
-                          <InArgument x:TypeArguments="x:String">["SNF"]</InArgument>
-                        </Assign.Value>
-                      </Assign>
-                    </Sequence>
-                  </uix:NCheckState.IfNotExists>
-                  <uix:NCheckState.Target>
-                    <uix:TargetAnchorable BrowserURL="dermalogica.fr/products/lotion-hydratante-active-active-moist" ContentHash="kaXb7hpGn0GJE8DsLy8pcg" DesignTimeRectangle="1096, 353, 115, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeMl+&quot;*' tag='LABEL'/&gt;&quot;]" FuzzySelectorArgument="[&quot;&lt;webctrl aaname='*&quot;+in_SizeMl+&quot;*' tag='LABEL'/&gt;&quot;]" Guid="5fc9a90a-53b0-4bf4-b999-83e3ec15daab" InformativeScreenshot="7fabc5c6c79dad328c1bcb9fe3b0bb88.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/Kok0IeeP30eFqceN28NhEQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lotion Hydratante Active - Active Moist - Dermalogica' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
-                  </uix:NCheckState.Target>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </uix:NCheckState>
-                <uix:NGetText DisplayName="Get Price" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="415.72173913043474,134.4" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="d3664f93-fa52-4919-b63a-5f462f8a55fe" TextString="[out_Price]" Version="V5">
-                  <uix:NGetText.Target>
-                    <uix:TargetAnchorable BrowserURL="dermalogica.it/products/active-moist" ContentHash="yAchjYNmbUWGeScctaZWXQ" DesignTimeRectangle="1110, 565, 76, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='price-item price-item--regular' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="380bd6b0-42d1-4c92-966c-f61624f4d427" InformativeScreenshot="3e91bb12dbc0d4d7eebbe504a5e19cf3.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/9N5UPlHkwk2GOGXgHLBX2g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Active Moist | crema idratante | Negozio ufficiale Dermalogica – Dermalogica' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
-                  </uix:NGetText.Target>
-                </uix:NGetText>
               </Sequence>
             </Switch>
           </Sequence>
@@ -906,7 +955,7 @@
         </ActivityFunc>
       </uix:NApplicationCard.OCREngine>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-9, -9, 1938, 1040" BrowserType="Edge" ContentHash="3wGq0y-6xEKcglb8_Vl5aQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAASdJREFUWEftl9sNwjAQBK8ESqAUOoEOoAMogY4ohRIoAbQoJ1m2JyHJ8gUjWYq89q3j+HGJ+NOyi4hbRDwi4mksirmvzWrOnY7uIo8uh6LRJSI2dYOBbDMHxToVfTXLDZoiiWo4xpIBJHox9ZVXQwamN0/WDECx1Vfrq+HTwLk4t7XwIeiDQkVO49rSgEKHq2GbNqBgBn1QMIM+KJhBHxTMoA8KZtAHBTPoQ4JuMG25e3Wbza1PyAcFBUqtPELn1ifkg0J54Cj40vqEfFDQNa1ACqznpfUJ+bBgBn1QMIM+KJhBHxTMoA8KZtAnt89USraGTMm6A8ikVBnPtzgOHt2kVKlyjk6ZsXMmFKv85+gd0W9c+d5YmZxhnV75OVxF60sxuz8kv80LzI8Nz/1reB8AAAAASUVORK5CYII=" InformativeScreenshot="5d708dcbdbbf6144d4d45ac3e9ee1b54.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/P-qcenvHdEq9bHKTicFYRg" Selector="&lt;html app='msedge.exe' /&gt;" Url="[in_WebPage]" Version="V2">
+        <uix:TargetApp Area="-9, -9, 1938, 1040" BrowserType="Edge" ContentHash="TXE430QgIUatsyWy_8HILw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAASdJREFUWEftl9sNwjAQBK8ESqAUOoEOoAMogY4ohRIoAbQoJ1m2JyHJ8gUjWYq89q3j+HGJ+NOyi4hbRDwi4mksirmvzWrOnY7uIo8uh6LRJSI2dYOBbDMHxToVfTXLDZoiiWo4xpIBJHox9ZVXQwamN0/WDECx1Vfrq+HTwLk4t7XwIeiDQkVO49rSgEKHq2GbNqBgBn1QMIM+KJhBHxTMoA8KZtAHBTPoQ4JuMG25e3Wbza1PyAcFBUqtPELn1ifkg0J54Cj40vqEfFDQNa1ACqznpfUJ+bBgBn1QMIM+KJhBHxTMoA8KZtAnt89USraGTMm6A8ikVBnPtzgOHt2kVKlyjk6ZsXMmFKv85+gd0W9c+d5YmZxhnV75OVxF60sxuz8kv80LzI8Nz/1reB8AAAAASUVORK5CYII=" InformativeScreenshot="5d708dcbdbbf6144d4d45ac3e9ee1b54.jpg" Reference="r3jqcW5wj0SvHD4YMQ6Cww/P-qcenvHdEq9bHKTicFYRg" Selector="&lt;html app='msedge.exe' /&gt;" Url="[in_WebPage]" Version="V2">
           <uix:TargetApp.Arguments>
             <InArgument x:TypeArguments="x:String" />
           </uix:TargetApp.Arguments>
@@ -916,6 +965,6 @@
         </uix:TargetApp>
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <ui:LogMessage DisplayName="Finishing process" sap:VirtualizedContainerService.HintSize="489.18260869565216,165.2869565217391" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Finishing searching process in &quot; + in_Variant + &quot; webpage. Price catched: &quot; + out_Price]" />
+    <ui:LogMessage DisplayName="Finishing process" sap:VirtualizedContainerService.HintSize="525.9130434782609,165.2869565217391" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Finishing searching process in &quot; + in_Variant + &quot; webpage. Price catched: &quot; + out_Price]" />
   </Sequence>
 </Activity>

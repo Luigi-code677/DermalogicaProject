@@ -41,10 +41,10 @@
       <x:String>System.Security</x:String>
       <x:String>UiPath.Excel.Model</x:String>
       <x:String>System.Linq.Expressions</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -107,7 +107,7 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Workflow used to Read Excel and extract it into a datatable&#xA;" DisplayName="ReadExcel" sap:VirtualizedContainerService.HintSize="883.0434782608695,982.5391304347826" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Workflow used to Read Excel and extract it into a datatable&#xA;" DisplayName="ReadExcel" sap:VirtualizedContainerService.HintSize="792.8869565217391,982.5391304347826" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -43,8 +43,6 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>UiPath.UIAutomationNext.Enums</x:String>
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
@@ -63,6 +61,8 @@
       <x:String>UiPath.Excel.Activities.Business</x:String>
       <x:String>System.Numerics</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -133,7 +133,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="WriteExcel" sap:VirtualizedContainerService.HintSize="883.0434782608695,1103.5826086956522" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="WriteExcel" sap:VirtualizedContainerService.HintSize="792.8869565217391,1103.5826086956522" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="rowIndex" />
       <Variable x:TypeArguments="x:Int32" Name="colIndex" />
