@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7M0YtpLSAky4oJOnvcujTQ" Reference="r3jqcW5wj0SvHD4YMQ6Cww/qNsjoP7inkOHy2lzGLr9cA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.co.uk" DesignTimeRectangle="592, 334, 177, 309" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='predictive-search-products' tag='A' /&gt;" Guid="53c910de-fce7-4ac8-837f-d5a95c2b45a8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica Skin Care | Official – Dermalogica UK' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="3b8c4ccac5a9de84a41a0b4138758111.jpg" xmlns="">0E6FU8f48hEK-T7ugcGoPNw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

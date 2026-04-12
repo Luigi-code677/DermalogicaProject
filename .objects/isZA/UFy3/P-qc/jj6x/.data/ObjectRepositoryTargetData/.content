@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LKT3nITu7EWQ_RePaqeI6Q" Reference="r3jqcW5wj0SvHD4YMQ6Cww/jj6xe-quXkCWCEtOr_M9_A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dermalogica.com" DesignTimeRectangle="836, 328, 605, 39" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='snize-ac-items-container-4' tag='DIV' aaname='*Sorry, nothing found for*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b8bc3eed-9cf3-426f-a8ce-b6a7bdc1fd2c" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dermalogica® Skin Care | Official Site' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2c62acbf13e129becc566249bdddecbc.jpg" xmlns="">08rbPkxIYiEudb62y2I9LWg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
